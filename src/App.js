@@ -1,13 +1,15 @@
 import styled from "styled-components";
-import HeroSection from "./components/HeroSection";
-import NavbarSection from "./components/NavbarSection";
+import { Routes, Route } from "react-router-dom";
+import NavbarSection from "./components/Navbar/NavbarSection";
+import DemoPage from "./Pages/Demos";
 
 function App() {
   return (
     <AppContainer>
       <NavbarSection />
-      <HeroSection />
-      <div>test</div>
+      <Routes>
+        <Route path="/" element={<DemoPage />} />
+      </Routes>
     </AppContainer>
   );
 }
@@ -18,4 +20,5 @@ const AppContainer = styled.div`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 `;
