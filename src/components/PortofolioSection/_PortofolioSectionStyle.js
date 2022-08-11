@@ -32,5 +32,17 @@ export const ContentSerivces = styled(ContentBase)`
 `;
 
 export const ResumeSection = styled(ContentBase)`
-  padding: 2rem;
+  padding: 2rem 5rem 2rem 2rem;
+`;
+
+export const Title = styled.p`
+  color: #f26d83;
+  font-size: 19px;
+  font-weight: 800;
+`;
+
+export const Desc = styled.p`
+  color: #a36c74;
+  font-size: 16px;
+  font-weight: 600;
 `;

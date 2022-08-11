@@ -4,19 +4,22 @@ const SocialBarMenu = () => {
   return (
     <SocialBar>
       <a href="/">
-        <i class="fa fa-facebook"></i>
+        <span class="material-symbols-outlined">mode_comment</span>
       </a>
       <a href="/">
-        <i class="fa fa-twitter"></i>
+        <span class="material-symbols-outlined">view_in_ar</span>
       </a>
       <a href="/">
-        <i class="fa fa-google"></i>
+        <span class="material-symbols-outlined">receipt_long</span>
       </a>
       <a href="/">
-        <i class="fa fa-linkedin"></i>
+        <span class="material-symbols-outlined">local_see</span>
       </a>
       <a href="/">
-        <i class="fa fa-youtube"></i>
+        <span class="material-symbols-outlined">group</span>
+      </a>
+      <a href="/">
+        <span class="material-symbols-outlined">shopping_cart</span>
       </a>
     </SocialBar>
   );

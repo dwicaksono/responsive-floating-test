@@ -9,16 +9,20 @@ export const SocialBar = styled.div`
   right: 0;
   z-index: 1;
   & a {
-    display: block;
+    display: flex;
     text-align: center;
-    padding: 16px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
     transition: all 0.3s ease;
     color: #525355;
     font-size: 20px;
     border: #525355 solid 1px;
     background-color: white;
+    text-decoration: none;
   }
-  & a:hover {
+  & a:hover,
+  a:active {
     background-color: #e1f5df;
     color: green;
   }
