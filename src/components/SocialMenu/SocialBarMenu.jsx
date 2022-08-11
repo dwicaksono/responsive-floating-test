@@ -1,26 +1,15 @@
+import { FLOAT_MENU } from "../../constants/Generals";
 import { SocialBar } from "./_SocialBarMenuStyle";
+import { Link } from "react-router-dom";
 
 const SocialBarMenu = () => {
   return (
     <SocialBar>
-      <a href="/">
-        <span class="material-symbols-outlined">mode_comment</span>
-      </a>
-      <a href="/">
-        <span class="material-symbols-outlined">view_in_ar</span>
-      </a>
-      <a href="/">
-        <span class="material-symbols-outlined">receipt_long</span>
-      </a>
-      <a href="/">
-        <span class="material-symbols-outlined">local_see</span>
-      </a>
-      <a href="/">
-        <span class="material-symbols-outlined">group</span>
-      </a>
-      <a href="/">
-        <span class="material-symbols-outlined">shopping_cart</span>
-      </a>
+      {FLOAT_MENU.map((icon) => (
+        <Link to="/">
+          <span class="material-symbols-outlined">{icon}</span>
+        </Link>
+      ))}
     </SocialBar>
   );
 };
