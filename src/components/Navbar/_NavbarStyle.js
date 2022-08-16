@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Navbar = styled.nav`
   background: white;
@@ -12,12 +13,16 @@ export const Navbar = styled.nav`
 export const ContainerMenu = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-right: 3rem;
   padding-left: 3rem;
   width: 100%;
+
   @media screen and (max-width: 991px) {
-    justify-content: flex-end;
+    height: ${({ vert }) => (vert ? "100vh" : "unset")};
+    padding: 1rem 3rem;
+    flex-direction: column;
+    justify-content: unset;
   }
 `;
 
@@ -29,12 +34,39 @@ export const ContentMenu = styled.div`
     float: left;
     display: block;
     color: black;
-    text-align: center;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     font-weight: 600;
   }
+  & a:hover {
+    color: grey;
+  }
+`;
+
+export const MenuLink = styled(Link)`
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  & :hover {
+    color: grey;
+  }
+`;
+
+export const WrapMenuVertical = styled.div`
+  width: 100%;
+  @media screen and (min-width: 991px) {
+    display: none;
+  }
+`;
+
+export const CloseWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem 0rem;
 `;
 
 export const SearchAndCartContainer = styled.div`
@@ -70,6 +102,7 @@ export const Input = styled.input`
     border-color: unset;
   }
   @media screen and (max-width: 991px) {
-    display: none;
+    display: ${({ show }) => (show ? "block" : "none")};
+    margin-right: 1rem;
   }
 `;

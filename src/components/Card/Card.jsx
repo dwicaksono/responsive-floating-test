@@ -4,7 +4,7 @@ const Card = ({ src, title, desc }) => {
   return (
     <Container>
       <BoxIcon>
-        <span class="material-symbols-outlined">{src}</span>
+        <span className="material-symbols-outlined">{src}</span>
       </BoxIcon>
       <Title>{title}</Title>
       <Desc>{desc}</Desc>

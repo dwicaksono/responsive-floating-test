@@ -6,8 +6,8 @@ const SocialBarMenu = () => {
   return (
     <SocialBar>
       {FLOAT_MENU.map((icon) => (
-        <Link to="/">
-          <span class="material-symbols-outlined">{icon}</span>
+        <Link to="/" key={icon}>
+          <span className="material-symbols-outlined">{icon}</span>
         </Link>
       ))}
     </SocialBar>

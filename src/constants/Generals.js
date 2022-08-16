@@ -1,4 +1,8 @@
-export const MENU_NAVBAR = ["Demos", "Pages", "Protfolio"];
+export const MENU_NAVBAR = [
+  { menu: "Demos", path: "/" },
+  { menu: "Pages", path: "/pages" },
+  { menu: "Portfolio", path: "/portfolio" },
+];
 
 export const LIST_CARD = [
   {
@@ -22,8 +26,6 @@ export const LIST_CARD = [
     desc: "Quam facilisi nunc faucibus at porttitor vestibulum consequat dignissim tellus sollicitudin",
   },
 ];
-
-<span class="material-symbols-outlined">receipt_long</span>;
 
 export const FLOAT_MENU = [
   "mode_comment",
