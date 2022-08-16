@@ -45,13 +45,13 @@ const NavbarSection = () => {
     }
   };
 
-  const onMouseLeave = (menu) => {
-    if (window.innerWidth < 991) {
-      setIsDropdown(false);
-    } else {
-      setIsDropdown(false);
-    }
-  };
+  // const onMouseLeave = (menu) => {
+  //   if (window.innerWidth < 991) {
+  //     setIsDropdown(false);
+  //   } else {
+  //     setIsDropdown(false);
+  //   }
+  // };
 
   return (
     <>
