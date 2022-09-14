@@ -6,7 +6,6 @@ import {
   getRemoteConfig,
   fetchAndActivate,
   getValue,
-  activate,
 } from "firebase/remote-config";
 import { app } from "../firebase";
 import { useEffect, useState } from "react";
