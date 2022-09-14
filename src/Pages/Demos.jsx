@@ -22,7 +22,7 @@ const DemoPage = () => {
         setIsFlagBar(flag);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [remoteConfig]);
 
   return (
     <div>
