@@ -23,7 +23,7 @@ const DemoPage = () => {
       })
       .catch((err) => console.log(err));
   }, [remoteConfig]);
-
+  console.log("masuk");
   return (
     <div>
       {isFlagBar && <SocialBarMenu />}
